@@ -1,0 +1,12 @@
+class kotit {
+
+        file {'/tmp/kotit':
+        content => "Tämä on kotitehtävä\n",
+
+        }
+
+        package {'chromium-bsu':
+        ensure => 'installed',
+        allowcdrom => 'true',
+        }
+}
